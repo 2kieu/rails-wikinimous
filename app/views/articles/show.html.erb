@@ -1,0 +1,6 @@
+<div>
+  <h1> <%= @article.title %> </h1>
+  <%= link_to "", edit_article_path, class: "icon fa-solid fa-pencil" %>
+  <%= link_to "", article_path(@article), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "icon fa-regular fa-trash-can" %>
+</div>
+<p class="border border-secondary"> <%= @article.content %> </p>

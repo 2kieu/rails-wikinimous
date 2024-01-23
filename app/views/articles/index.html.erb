@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="row justify-content-center align-items-center text-center">
+    <% @articles.each do |article| %>
+      <h4> <%= link_to article.title, article_path(article), class:"title" %> </h4>
+      <p> <%= article.content %> </p>
+    <% end %>
+  </div>
+</div>
